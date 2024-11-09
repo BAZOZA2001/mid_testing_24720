@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="UserServlet" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="MALE">Male</option>
+            <option value="FEMALE">Female</option>
+        </select><br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" name="userName" required><br><br>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="TEACHER">Teacher</option>
+            <option value="DEAN">Dean</option>
+            <option value="LIBRARIAN">Librarian</option>
+            <option value="HOD">HOD</option>
+            <option value="MANAGER">Manager</option>
+            <option value="STUDENT">Student</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
